@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/parentBackground"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtExpression"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:ellipsize="start"
+        android:fontFamily="@font/roboto"
+        android:gravity="end"
+        android:paddingTop="40dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="55sp" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="end"
+        android:maxLines="1"
+        android:paddingTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPercentage"
+                style="@style/operator"
+                android:background="@drawable/button_operators_2"
+                android:text="@string/percentage" />
+
+            <Button
+                android:id="@+id/btnPower"
+                style="@style/operator"
+                android:background="@drawable/button_operators_2"
+                android:text="@string/power" />
+
+            <Button
+                android:id="@+id/btnOpen"
+                style="@style/operator"
+                android:background="@drawable/button_operators_2"
+                android:text="@string/open" />
+
+            <Button
+                android:id="@+id/btnClose"
+                style="@style/operator"
+                android:background="@drawable/button_operators_2"
+                android:text="@string/close" />
+
+            <Button
+                android:id="@+id/btnRoot"
+                style="@style/operator"
+                android:background="@drawable/button_operators_2"
+                android:text="@string/root" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSeven"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/_7" />
+
+            <Button
+                android:id="@+id/btnEight"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/_8" />
+
+            <Button
+                android:id="@+id/btnNine"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/_9" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                style="@style/operator"
+                android:background="@drawable/button_operators"
+                android:text="@string/divide" />
+
+            <Button
+                android:id="@+id/btnAllClear"
+                style="@style/operator"
+                android:background="@drawable/button_operators_3"
+                android:text="@string/ac" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFour"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/_4" />
+
+            <Button
+                android:id="@+id/btnFive"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/_5" />
+
+            <Button
+                android:id="@+id/btnSix"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/_6" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                style="@style/operator"
+                android:background="@drawable/button_operators"
+                android:text="@string/multiply"
+                android:textSize="23sp" />
+
+            <ImageButton
+                android:id="@+id/btnBackspace"
+                style="@style/operator"
+                android:background="@drawable/button_operators_3"
+                android:scaleType="center"
+                android:src="@drawable/backspace"
+                tools:ignore="ContentDescription" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOne"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/_1" />
+
+            <Button
+                android:id="@+id/btnTwo"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/_2" />
+
+            <Button
+                android:id="@+id/btnThree"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/_3" />
+
+            <Button
+                android:id="@+id/btnMinus"
+                style="@style/operator"
+                android:background="@drawable/button_operators"
+                android:text="@string/minus"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnEmpty2"
+                style="@style/operator"
+                android:background="@drawable/button_operators_3"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDot"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/dot" />
+
+            <Button
+                android:id="@+id/btnZero"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="@string/_0" />
+
+            <Button
+                android:id="@+id/btnEmpty1"
+                style="@style/operand"
+                android:background="@drawable/button_operand"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                style="@style/operator"
+                android:background="@drawable/button_operators"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/btnEquals"
+                style="@style/operator"
+                android:background="@drawable/button_operators_3"
+                android:text="@string/equals" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

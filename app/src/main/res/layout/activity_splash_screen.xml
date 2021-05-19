@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/parentBackground"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splashIcon"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_calculator"
+        android:contentDescription="@string/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/basic_calculator"
+        android:layout_below="@id/splashIcon"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idDev"
+        android:layout_above="@id/idAmrit"
+        android:text="@string/developed_by"
+        android:layout_marginBottom="5dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idAmrit"
+        android:layout_marginBottom="20dp"
+        android:text="@string/amrit_nayak_iter_soa"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:textAlignment="center"/>
+
+</RelativeLayout>
